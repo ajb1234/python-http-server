@@ -1,9 +1,9 @@
 node {
-	#download it
+	//download it
 	git 'https://github.com/ajb1234/python-http-server'
-	#install it
+	//install it
 	sh "sudo cp -r app.py public /home/python"
-	#update permissions
+	//update permissions
 	sh "sudo chown -R python:python /home/python"
 	sh "sudo systemctl restart pyhton-systemd-http-server.service"
 }
